@@ -242,7 +242,7 @@ class ConfiguredAssetFilePathDataConnector(FilePathDataConnector):
         ):
             # batch_spec_passthrough from data_asset
             batch_spec_passthrough = deepcopy(
-                self.assets[data_asset_name]["batch_spec_passthrough"]
+                self.assets[data_asset_name].batch_spec_passthrough
             )
             batch_definition_batch_spec_passthrough = (
                 deepcopy(batch_definition.batch_spec_passthrough) or {}
